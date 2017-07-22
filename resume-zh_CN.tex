@@ -31,7 +31,7 @@
 深度学习框架sensenet的开发与在虚拟化集群上的部署
 \begin{itemize}
   \item 实现sensenet的一些网络的前向传播和后向传播
-  \item 实现sensenet/tensorflow在k8s集群上的部署、资源监控和网络并行训练
+  \item 实现sensenet/tensorflow在k8s集群上的部署优化、资源监控和网络并行训练
   \item 工具:caffe,tensorflow,k8s,docker,slurm,openmpi,intelmpi,HIG等
 \end{itemize}
 
@@ -47,9 +47,10 @@
 \datedsubsection{\textbf{多源物端视频监控项目}}{2016年10月 -- 2017年04月}
 \role{项目策划与算法研究}{}
 %\begin{onehalfspacing}
-搭建一套视频监控平台，实现运动目标检测、多摄像头联动跟踪目标、云端视频结构化存储与检索\begin{itemize}
+搭建一套视频监控平台，实现运动目标检测与跟踪、模型压缩优化、视频结构化存储与检索
+\begin{itemize}
   \item 设计组合特征与BOW模型实现目标结构化存储与检索
-  \item 研究实现或改进TLD、KCF、MDNet、GoTurn等跟踪算法
+  \item 研究实现TLD、KCF、MDNet、GoTurn等跟踪算法，并对算法在arm平台上进行压缩优化
 \end{itemize}
 %\end{onehalfspacing}
 
@@ -58,8 +59,8 @@
 \role{算法设计与程序开发}{}
 图片中舰船的检测以及匹配，视频中运动船只的检测统计
 \begin{itemize}
-  \item sift特征进行图像匹配；制作船只图像数据集,高斯混合模型和腐蚀膨胀方法检测视频运动船只
-  \item 使用svm算法hog特征，adaboost算法与harr特征，DPM算法与hog特征进行船只检测
+  \item sift特征进行图像匹配,制作船只图像数据集,高斯混合模型和腐蚀膨胀方法检测视频运动船只
+  \item 使用svm算法hog特征/adaboost与harr特征，DPM算法以及faster rcnn进行船只检测
 \end{itemize}
 
 

@@ -23,7 +23,7 @@
 \datedsubsection{\textbf{中科院计算所}, 北京}{2015 -- 至今}
 \textit{在读硕士研究生}\ 计算机视觉/深度学习, 预计 2018 年 6 月毕业
 \datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2011 -- 2015}
-\textit{学士}\ 软件工程-嵌入式系统
+\textit{学士}\ 软件工程-嵌入式系统方向 （全院排名5\%）
 
 \section{\faUsers\ 实习经历}
 \datedsubsection{\textbf{商汤科技} 北京}{2017年04月 -- 至今}
@@ -31,14 +31,16 @@
 基于多机多卡的深度学习框架sensenet开发，在虚拟化集群上的docker镜像开发和DL模型训练工作
 \begin{itemize}
   \item 基于caffe开发用于高性能GPU集群的多机多卡优化的深度学习框架sensenet;
-  \item 开发sensenet的docker镜像，在虚拟化集群上进行部署，GPU支持，资源管理多机多卡训练网络;
-  \item 工具:caffe,mpi,tensorflow,k8s,docker,slurm,heapster等
+  \item 开发sensenet的docker镜像，提供GPU支持和rdma网络支持
+  \item 部署kubenetes虚拟化集群，编写api提供一键式多机多卡训练网络模型，并进行集群资源监控
+  \item 工具:caffe,mpi,memcache,parameter server,kubenetes,docker,slurm,heapster等
 \end{itemize}
 
 \datedsubsection{\textbf{理光中国}北京}{2016年03月 -- 2016年09月}
 \role{计算机视觉实习生}{部门：视频算法研究部}
 街景视频浓缩系统开发
 \begin{itemize}
+  \item 使用VIBE算法在视频中背景建模，使用faster rcnn进行目标的检测
   \item 搭建视频浓缩系统,实现24倍视频浓缩,目标结构化存储检索,设计自适应目标叠加算法
   \item 视频浓缩以缓存和多线程方式对回贴算法提速900倍
 \end{itemize}
@@ -50,16 +52,18 @@
 搭建一套视频监控平台，实现运动目标检测与跟踪、深度学习模型压缩优化、视频结构化存储与检索
 \begin{itemize}
   \item 设计组合特征与BOW模型实现目标结构化存储与检索
-  \item 研究改进TLD/MDNet/GoTurn等跟踪算法，用squeezenet/mobilenet等在arm平台上模型优化
+  \item 独立研究TLD/MDNet/GoTurn等跟踪算法，改进MDNet网络结构，拟发表论文
+  \item 用squeezenet/mobilenet模型和deep compression算法在arm平台上对跟踪算法压缩优化
 \end{itemize}
 %\end{onehalfspacing}
 
 
-\datedsubsection{\textbf{海上舰船检测与匹配}}{2015年03月 -- 2016年04月}
+\datedsubsection{\textbf{海上舰船检测与匹配}}{2014年11月 -- 2016年06月}
 \role{算法设计与程序开发}{重大专项}
 图片中舰船的检测以及匹配，视频中运动船只的检测统计
 \begin{itemize}
-  \item sift特征进行图像匹配,制作船只图像数据集,高斯混合模型和腐蚀膨胀方法检测视频运动船只
+  \item sift特征进行海上舰船图像匹配,制作船只图像数据集
+  \item 高斯混合模型GMM和腐蚀膨胀方法检测视频运动船只,监控船只流量
   \item 使用adaboost与harr特征，svm算法hog特征，DPM算法以及faster rcnn进行船只检测
 \end{itemize}
 
@@ -72,18 +76,14 @@
 %\end{itemize}
 
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{二等奖(2/90)}, CCF全国青年大数据创新大赛}{2015年12月}
-\datedline{\textit{二等奖}, 星火杯软件设计竞赛}{2014年11月}
-\datedline{\textit{一等奖(11/540)}, 华为杯程序设计大赛}{2013年06月}
-
-\section{\faInfo\ 其他}
+\section{\faInfo\ 专业技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item github: https://github.com/DragonFive 技术博客: https://dragonfive.github.io/  
-  \item 熟悉C++/Python等语言，opencv/caffe/cuda等库，k8s/docker等技术和mpi/slurm等集群工具
-  \item 从底层的DL框架到中层DL model到应用层CV算法到DL模型压缩集群管理和虚拟化都有经验
-  \item 实现的一些机器学习算法：https://github.com/DragonFive/python\_cv\_AI\_ML
+  \item github: https://github.com/DragonFive 博客: https://dragonfive.github.io/
+  \item 熟悉C++/Python等语言，opencv/caffe/pytorch等库，k8s/docker等技术和mpi/slurm等集群工具
+  \item 熟悉集群架构、DL框架并行、CNN网络模型、模型压缩优化、目标检测跟踪算法、图像处理
+  \item 实现ML算法：https://github.com/DragonFive/python\_cv\_AI\_ML 
+  \item 学习cs231N, Deep learning（Yoshua Bengio）,Neural Network and Deep Learning（Michael Nielsen）
 \end{itemize}
 
 %% Reference
